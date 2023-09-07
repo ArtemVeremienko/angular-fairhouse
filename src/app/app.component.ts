@@ -37,4 +37,11 @@ export class AppComponent {
       laundry: false,
     },
   ]
+
+  selectedLocation?: HousingLocation
+
+  updateSelectedLocation(location: HousingLocation) {
+    console.log(location)
+    this.selectedLocation = location
+  }
 }
